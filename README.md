@@ -1,20 +1,55 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+🚀 AI-Powered Azure Boards Prompt Generator (Frontend UI)
+This project provides a React + TypeScript + Vite--based user interface for generating project management content using AI.\ The UI allows users to craft prompts that generate Epics, Features, and User Stories for Azure Boards.
 
-# Run and deploy your AI Studio app
+📂 Project Structure
+/components
+  ├─ ADOExportModal.tsx
+  ├─ Dashboard.tsx
+  ├─ DocumentationDisplay.tsx
+  ├─ ErrorMessages.tsx
+  ├─ Header.tsx
+  ├─ HistoryPanel.tsx
+  ├─ InputArea.tsx
+  ├─ Loader.tsx
+  ├─ Login.tsx
+  ├─ ResultsDisplay.tsx
+  ├─ SettingsPanel.tsx
+  ├─ WelcomeMessage.tsx
 
-This contains everything you need to run your app locally.
+/services
+  ├─ adoService.ts
+  ├─ geminiService.ts
 
-View your app in AI Studio: https://ai.studio/apps/drive/1wmuPcyTFxKa5bNTGpTwBFAtUsNkPkwIu
+App.tsx  
+index.tsx  
+index.html  
+vite.config.ts  
+package.json  
+tsconfig.json  
+🧠 How It Works
+User enters a description/prompt of the project.\
+The frontend calls AI to generate structured work items:
+Epics\
+Features\
+User Stories\
+User can then export these items to Azure Boards via Azure DevOps APIs.
+🏁 Getting Started
+Prerequisites
+Node.js (16+)
+npm
+Install Dependencies
+npm install
+Start Development Server
+npm run dev
+🌐 Technologies Used
+React (TypeScript)
+Vite
+Azure DevOps REST API
+AI Model Integration (Gemini / OpenAI / Llama)
+📦 Build for Production
+npm run build
+🤝 Contribution
+Pull requests and suggestions are welcome.
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+📄 License
+This project is for personal or internal use unless otherwise specified.
